@@ -42,4 +42,3 @@ fetch('https://quotes15.p.rapidapi.com/quotes/random/', options)
 function myFunction() {
   alert ("Thank you for submitting your quote");
 } 
-
