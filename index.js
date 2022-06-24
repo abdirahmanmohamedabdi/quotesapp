@@ -24,5 +24,3 @@ const wordInput = document.getElementById("review");
             window.location.reload();
             push.preventDefault();
         } 
-
-        
