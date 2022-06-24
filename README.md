@@ -16,8 +16,7 @@ Alternative One
 
       git clone git@github.com:abdirhamanabdi/quotesapp.git
 
-    Be patient as it creates a copy on your local machine for you.
-
+    
     Change directory to the repo folder:
 
       cd quotesapp
