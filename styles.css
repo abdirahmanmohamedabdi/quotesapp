@@ -6,31 +6,14 @@
     margin: 20% auto 0;
     
   }
-  .site-wrapper {
-    display: table;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-  }
+  
  
- 
-  .btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  
-form {
-    width: 450px;
-    margin: 0 auto 50px auto;
-  }
   textarea {
     display: block;
     width: 100%;
@@ -40,14 +23,39 @@ form {
     font-size: 14px;
     margin-bottom: 10px;
   }
-  h1 { margin: 0; }
+  
+  
+  h1 {
+    margin: 0;
+    color: #450be6;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  form button[type="submit"] {
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #0008f0;
+    color: #fff;
+    padding: 7px 10px;
+    cursor: pointer;
+  }
+  
+  form {
+    width: 400px;
+    margin: 0 auto 50px auto;
+  }
+  h1 
+  { margin: 0; }
 html, body { 
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
   text-align: center;
-  height: 100%; }
+  height: 100%; 
+}
+
 .container-fluid { padding: 40px; background: #7f7fae; 
     background-color: #2894d7;
-    
-   
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'IBM Plex Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      }
