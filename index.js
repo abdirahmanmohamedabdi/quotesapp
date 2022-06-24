@@ -9,18 +9,37 @@ const options = {
 fetch('https://quotes15.p.rapidapi.com/quotes/random/', options)
 	.then(response => response.json())
     .then(data => 
-
         {
+          console.log(data);
+      document.getElementById("Author").innerHTML = data.originator.name
+ document.getElementById("quote").innerHTML = data.content    
+        });
 
-const name = document.getElementById("Author").innerHTML = data.originator.name
-const quote = document.getElementById("quote").innerHTML = data.content
-const wordInput = document.getElementById("review");
+
+    const wordInput = document.getElementById("quote1");
+    const form_el = document.getElementById("quote-form");
+    const quote = document.getElementById("quote-list")
+    const newquote = document.createElement('li');
+    //event listener for when somoene clicks on the submit button
+    form_el.addEventListener("submit", function (push)
     
-        })
+    
+      
+    {
+        push.preventDefault();
+        addQuote();
+        
+    })
 
-       
-          
-          function refreshPage(){
-            window.location.reload();
-            push.preventDefault();
-        } 
+     function addQuote() {
+         newquote.innerText = wordInput.value;
+         //console.log(newReview)
+        quote.append(newquote);
+     }
+
+     form_el.addEventListener("submit", myFunction);
+
+function myFunction() {
+  alert ("Thank you for submitting your quote");
+} 
+
