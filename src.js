@@ -9,14 +9,15 @@ const options = {
 fetch("https://quotes15.p.rapidapi.com/quotes/random/", options)
   .then((response) => response.json())
   .then((data) => {
-    document.getElementById("Author").innerHTML = data.originator.name;
+    console.log(data);
+    document.getElementById("author").innerHTML = data.originator.name;
     document.getElementById("quote").innerHTML = data.content;
   });
 
 const wordInput = document.getElementById("quote1");
 const form_el = document.getElementById("quote-form");
 const quote = document.getElementById("quote-list");
-const newquote = document.createElement("li");
+const newquote = document.createElement("h3");
 form_el.addEventListener("submit", function (push) {
   push.preventDefault();
   addQuote();
@@ -32,3 +33,22 @@ form_el.addEventListener("submit", myFunction);
 function myFunction() {
   alert("Thank you for submitting your quote");
 }
+const refreshButton = document.querySelector(".refresh-button");
+
+const refreshPage = () => {
+  location.reload();
+};
+
+refreshButton.addEventListener("click", refreshPage);
+
+const btn = document.querySelector("button");
+const icon = document.querySelector("button i");
+
+btn.addEventListener("click", () => {
+  if (btn.className === "test") {
+    btn.classList.add("animate");
+  } else {
+    btn.classList.remove("animate");
+  }
+});
+
