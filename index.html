@@ -1,32 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Inspirational Quotes</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="styles.css">
-  <script defer type="text/javascript" src="index.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer type="text/javascript" src="src.js"></script>
 </head>
-  <body>
-    <div class="container-fluid">
-  <li class="card"></li>
-  
- <h1 id="quote"></h1>
-      <h2 id="Author"></h2>
-      <div class="particle-box"></div>
 
-</div>
+<body>
+  <div class="site-wrapper">
+    <div class="navbar">
+      <h3 class="logo">Inspirational Quotes</h3> 
+    </div>
+    <div class="quote-container">
+      <p id="quote" class="lead">Quote goes here</p>
+      <p id="author" class="lead">Author name goes here</p>
+      <button class="test"><i class="fas fa-heart"></i> Like</button>
+    </div>
+    <form id="quote-form">
+      <label for="quote"></label>
+      <textarea id="quote1"></textarea>
+      <button type="submit">Add Quote</button>
+    </form>
+    <h3 id="quote-list"></h3>
+  </div>
+  <div class="refresh-button">
+   <button class="refresh-button1">Generate random quote</button> 
+   </div>
+  </div>
 </body>
-    
-      <form id="quote-form">
-        <label for="quote"></label>
-        <textarea id="quote1"></textarea>
-        <button type="submit">Add Quote</button>
-      </form>
-      <ul id="quote-list">
-      </ul>
-
-      </div>
-  </body>
 
 </html>
